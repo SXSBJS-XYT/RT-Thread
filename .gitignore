@@ -2,47 +2,38 @@
 # Keil MDK 编译产物
 # ========================================
 
-# 目标文件
 *.o
 *.d
 *.axf
 *.crf
 *.dep
-
-# 烧录文件
 *.hex
 *.bin
-
-# 链接文件
 *.map
 *.lnp
 *.lst
-
-# 编译报告
 *.htm
 *.build_log.htm
-
-# Keil用户配置（每人不同）
 *.uvguix.*
 *.uvoptx
 *.scvd
 
 # ========================================
-# 编译输出目录
+# 编译输出目录（适配所有子工程）
 # ========================================
 
-/MDK-ARM/CreateThread/
-/MDK-ARM/Objects/
-/MDK-ARM/Listings/
-/MDK-ARM/DebugConfig/
-/MDK-ARM/RTE/
+**/MDK-ARM/Objects/
+**/MDK-ARM/Listings/
+**/MDK-ARM/DebugConfig/
+**/MDK-ARM/RTE/
+**/MDK-ARM/CreateThread/
 
 # ========================================
 # VSCode
 # ========================================
 
-/.vscode/*
-!/.vscode/settings.json
+**/.vscode/*
+!**/.vscode/settings.json
 
 # ========================================
 # 系统文件
