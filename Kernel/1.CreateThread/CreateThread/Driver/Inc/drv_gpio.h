@@ -1,25 +1,24 @@
-// Driver/Inc/drv_gpio.h
 #ifndef __DRV_GPIO_H
 #define __DRV_GPIO_H
 
 #include <stdint.h>
 
-/* GPIO¶ÔÏó½á¹¹Ìå */
+/* GPIOå¯¹è±¡ç»“æ„ä½“ */
 typedef struct drv_gpio drv_gpio_t;
 
 struct drv_gpio {
-    /* Ë½ÓĞÊı¾İ */
-    void     *port;         // GPIO¶Ë¿Ú
-    uint16_t  pin;          // GPIOÒı½Å
+    /* ç§æœ‰æ•°æ® */
+    void     *port;         // GPIOç«¯å£
+    uint16_t  pin;          // GPIOå¼•è„š
     
-    /* ·½·¨ */
+    /* æ–¹æ³• */
     void     (*init)(drv_gpio_t *self);
     void     (*write)(drv_gpio_t *self, uint8_t state);
     uint8_t  (*read)(drv_gpio_t *self);
     void     (*toggle)(drv_gpio_t *self);
 };
 
-/* ¹¹Ôìº¯Êı */
+/* æ„é€ å‡½æ•° */
 void drv_gpio_create(drv_gpio_t *self, void *port, uint16_t pin);
 
 #endif

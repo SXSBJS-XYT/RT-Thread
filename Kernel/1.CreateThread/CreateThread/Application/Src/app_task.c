@@ -3,39 +3,39 @@
 #include "main.h"
 #include <rtthread.h>
 
-/* LED¶ÔÏóÊµÀı */
+/* LEDå¯¹è±¡å®ä¾‹ */
 static srv_led_t led1;
 static srv_led_t led2;
 
-/* Ïß³ÌÏà¹Ø */
+/* çº¿ç¨‹ç›¸å…³ */
 static struct rt_thread led_thread;
 static rt_uint8_t led_stack[512];
 
-/* LEDÏß³ÌÈë¿Ú */
+/* LEDçº¿ç¨‹å…¥å£ */
 static void led_thread_entry(void *param)
 {
-    /* ³õÊ¼»¯LED¶ÔÏó */
+    /* åˆå§‹åŒ–LEDå¯¹è±¡ */
     led2.init(&led2);
     led1.init(&led1);
     
     while (1)
     {
-        led2.toggle(&led2);     // LED0·­×ª
+        led2.toggle(&led2);     // LED2ç¿»è½¬
         rt_thread_mdelay(500);
         
-        led1.toggle(&led1);     // LED1·­×ª
+        led1.toggle(&led1);     // LED1ç¿»è½¬
         rt_thread_mdelay(500);
     }
 }
 
-/* ³õÊ¼»¯º¯Êı */
+/* ä»»åŠ¡åˆå§‹åŒ–å‡½æ•° */
 void app_task_init(void)
 {
-    /* ´´½¨LED¶ÔÏó£¨¹¹Ôì£© */
+    /* åˆ›å»ºLEDå¯¹è±¡ï¼ˆæ„é€ ï¼‰ */
     srv_led_create(&led1, LED1_GPIO_Port, LED1_Pin, LED_ACTIVE_LOW);
 	  srv_led_create(&led2, LED2_GPIO_Port, LED2_Pin, LED_ACTIVE_LOW);
     
-    /* ´´½¨Ïß³Ì */
+    /* åˆ›å»ºçº¿ç¨‹ */
     rt_thread_init(&led_thread,
                    "led",
                    led_thread_entry,

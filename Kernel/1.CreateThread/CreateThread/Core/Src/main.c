@@ -98,7 +98,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		/* main也是线程，需要让出CPU */
+		/* main涔熸槸绾跨▼锛岄渶瑕佽鍑篊PU */
 		rt_thread_mdelay(1000);
   }
   /* USER CODE END 3 */

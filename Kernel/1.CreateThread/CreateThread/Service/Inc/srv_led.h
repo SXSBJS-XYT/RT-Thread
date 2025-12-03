@@ -1,32 +1,31 @@
-// Service/Inc/srv_led.h
 #ifndef __SRV_LED_H
 #define __SRV_LED_H
 
 #include <stdint.h>
 #include "drv_gpio.h"
 
-/* LED»îÔ¾µçÆ½¶¨Òå */
+/* LEDæ´»è·ƒç”µå¹³å®šä¹‰ */
 typedef enum {
-    LED_ACTIVE_LOW = 0,     // µÍµçÆ½µãÁÁ
-    LED_ACTIVE_HIGH         // ¸ßµçÆ½µãÁÁ
+    LED_ACTIVE_LOW = 0,     // ä½ç”µå¹³ç‚¹äº®
+    LED_ACTIVE_HIGH         // é«˜ç”µå¹³ç‚¹äº®
 } led_active_t;
 
-/* LED×´Ì¬ */
+/* LEDçŠ¶æ€ */
 typedef enum {
     LED_OFF = 0,
     LED_ON
 } led_state_t;
 
-/* LED¶ÔÏó½á¹¹Ìå */
+/* LEDå¯¹è±¡ç»“æ„ä½“ */
 typedef struct srv_led srv_led_t;
 
 struct srv_led {
-    /* Ë½ÓĞÊı¾İ */
-    drv_gpio_t   gpio;          // ×éºÏGPIO¶ÔÏó
-    led_active_t active_level;  // »îÔ¾µçÆ½
-    led_state_t  state;         // µ±Ç°×´Ì¬
+    /* ç§æœ‰æ•°æ® */
+    drv_gpio_t   gpio;          // ç»„åˆGPIOå¯¹è±¡
+    led_active_t active_level;  // æ´»è·ƒç”µå¹³
+    led_state_t  state;         // å½“å‰çŠ¶æ€
     
-    /* ·½·¨ */
+    /* æ–¹æ³• */
     void (*init)(srv_led_t *self);
     void (*on)(srv_led_t *self);
     void (*off)(srv_led_t *self);
@@ -35,7 +34,7 @@ struct srv_led {
     led_state_t (*get_state)(srv_led_t *self);
 };
 
-/* ¹¹Ôìº¯Êı */
+/* æ„é€ å‡½æ•° */
 void srv_led_create(srv_led_t *self, void *port, uint16_t pin, led_active_t active);
 
 #endif

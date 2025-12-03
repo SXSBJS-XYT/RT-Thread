@@ -1,10 +1,10 @@
 #include "drv_gpio.h"
 #include "main.h"
 
-/* Ë½ÓÐ·½·¨ÊµÏÖ */
+/* ç§æœ‰æ–¹æ³•çš„å®žçŽ° */
 static void _gpio_init(drv_gpio_t *self)
 {
-    // CubeMXÒÑ³õÊ¼»¯£¬ÕâÀï¿ÉÒÔÁô¿Õ»ò×ö¶îÍâÅäÖÃ
+    // CubeMXå·²ç»åˆå§‹åŒ–
 }
 
 static void _gpio_write(drv_gpio_t *self, uint8_t state)
@@ -24,14 +24,14 @@ static void _gpio_toggle(drv_gpio_t *self)
     HAL_GPIO_TogglePin((GPIO_TypeDef *)self->port, self->pin);
 }
 
-/* ¹¹Ôìº¯Êý */
+/* æž„é€ å‡½æ•° */
 void drv_gpio_create(drv_gpio_t *self, void *port, uint16_t pin)
 {
-    /* ³õÊ¼»¯Êý¾Ý */
+    /* åˆå§‹åŒ–æ•°æ®*/
     self->port = port;
     self->pin  = pin;
     
-    /* °ó¶¨·½·¨ */
+    /* ç»‘å®šæ–¹æ³• */
     self->init   = _gpio_init;
     self->write  = _gpio_write;
     self->read   = _gpio_read;

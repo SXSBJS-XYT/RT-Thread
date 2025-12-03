@@ -1,19 +1,19 @@
 #include "srv_led.h"
 
-/* Ë½ÓÐ·½·¨ÊµÏÖ */
+/* ç§æœ‰æ–¹æ³•çš„å®žçŽ° */
 static void _led_init(srv_led_t *self)
 {
     self->gpio.init(&self->gpio);
     self->state = LED_OFF;
-    self->off(self);  // Ä¬ÈÏ¹Ø±Õ
+    self->off(self);  // é»˜è®¤å…³é—­
 }
 
 static void _led_on(srv_led_t *self)
 {
     if (self->active_level == LED_ACTIVE_LOW) {
-        self->gpio.write(&self->gpio, 0);   // µÍµçÆ½µãÁÁ
+        self->gpio.write(&self->gpio, 0);   // ä½Žç”µå¹³ç‚¹äº®
     } else {
-        self->gpio.write(&self->gpio, 1);   // ¸ßµçÆ½µãÁÁ
+        self->gpio.write(&self->gpio, 1);   // é«˜ç”µå¹³ç‚¹äº®
     }
     self->state = LED_ON;
 }
@@ -21,9 +21,9 @@ static void _led_on(srv_led_t *self)
 static void _led_off(srv_led_t *self)
 {
     if (self->active_level == LED_ACTIVE_LOW) {
-        self->gpio.write(&self->gpio, 1);   // ¸ßµçÆ½Ï¨Ãð
+        self->gpio.write(&self->gpio, 1);   // é«˜ç”µå¹³ç†„ç­
     } else {
-        self->gpio.write(&self->gpio, 0);   // µÍµçÆ½Ï¨Ãð
+        self->gpio.write(&self->gpio, 0);   // ä½Žç”µå¹³ç†„ç­
     }
     self->state = LED_OFF;
 }
@@ -51,17 +51,17 @@ static led_state_t _led_get_state(srv_led_t *self)
     return self->state;
 }
 
-/* ¹¹Ôìº¯Êý */
+/* æž„é€ å‡½æ•° */
 void srv_led_create(srv_led_t *self, void *port, uint16_t pin, led_active_t active)
 {
-    /* ³õÊ¼»¯GPIO¶ÔÏó */
+    /* åˆå§‹åŒ–GPIOå¯¹è±¡ */
     drv_gpio_create(&self->gpio, port, pin);
     
-    /* ³õÊ¼»¯Êý¾Ý */
+    /* åˆå§‹åŒ–æ•°æ® */
     self->active_level = active;
     self->state = LED_OFF;
     
-    /* °ó¶¨·½·¨ */
+    /* ç»‘å®šæ–¹æ³• */
     self->init      = _led_init;
     self->on        = _led_on;
     self->off       = _led_off;
