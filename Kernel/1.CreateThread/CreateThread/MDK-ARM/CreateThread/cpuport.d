@@ -1,0 +1,9 @@
+createthread\cpuport.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/libcpu/arm/cortex-m4/cpuport.c
+createthread\cpuport.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtthread.h
+createthread\cpuport.o: ../RT-Thread/rtconfig.h
+createthread\cpuport.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtdebug.h
+createthread\cpuport.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtdef.h
+createthread\cpuport.o: D:\KEIL_526\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+createthread\cpuport.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtservice.h
+createthread\cpuport.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtm.h
+createthread\cpuport.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtthread.h

@@ -1,0 +1,10 @@
+createthread\ipc.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/src/ipc.c
+createthread\ipc.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtthread.h
+createthread\ipc.o: ../RT-Thread/rtconfig.h
+createthread\ipc.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtdebug.h
+createthread\ipc.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtdef.h
+createthread\ipc.o: D:\KEIL_526\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+createthread\ipc.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtservice.h
+createthread\ipc.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtm.h
+createthread\ipc.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtthread.h
+createthread\ipc.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rthw.h

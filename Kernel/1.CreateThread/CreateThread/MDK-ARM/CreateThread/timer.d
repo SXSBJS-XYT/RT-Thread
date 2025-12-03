@@ -1,0 +1,10 @@
+createthread\timer.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/src/timer.c
+createthread\timer.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtthread.h
+createthread\timer.o: ../RT-Thread/rtconfig.h
+createthread\timer.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtdebug.h
+createthread\timer.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtdef.h
+createthread\timer.o: D:\KEIL_526\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+createthread\timer.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtservice.h
+createthread\timer.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtm.h
+createthread\timer.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rtthread.h
+createthread\timer.o: ../Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/rthw.h
