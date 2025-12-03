@@ -5,13 +5,15 @@
 #include "drv_gpio.h"
 
 /* LED活跃电平定义 */
-typedef enum {
-    LED_ACTIVE_LOW = 0,     // 低电平点亮
-    LED_ACTIVE_HIGH         // 高电平点亮
+typedef enum
+{
+    LED_ACTIVE_LOW = 0, // 低电平点亮
+    LED_ACTIVE_HIGH     // 高电平点亮
 } led_active_t;
 
 /* LED状态 */
-typedef enum {
+typedef enum
+{
     LED_OFF = 0,
     LED_ON
 } led_state_t;
@@ -19,12 +21,13 @@ typedef enum {
 /* LED对象结构体 */
 typedef struct srv_led srv_led_t;
 
-struct srv_led {
+struct srv_led
+{
     /* 私有数据 */
-    drv_gpio_t   gpio;          // 组合GPIO对象
-    led_active_t active_level;  // 活跃电平
-    led_state_t  state;         // 当前状态
-    
+    drv_gpio_t gpio;           // 组合GPIO对象
+    led_active_t active_level; // 活跃电平
+    led_state_t state;         // 当前状态
+
     /* 方法 */
     void (*init)(srv_led_t *self);
     void (*on)(srv_led_t *self);

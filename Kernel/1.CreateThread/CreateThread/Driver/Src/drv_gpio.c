@@ -9,9 +9,7 @@ static void _gpio_init(drv_gpio_t *self)
 
 static void _gpio_write(drv_gpio_t *self, uint8_t state)
 {
-    HAL_GPIO_WritePin((GPIO_TypeDef *)self->port, 
-                      self->pin, 
-                      state ? GPIO_PIN_SET : GPIO_PIN_RESET);
+    HAL_GPIO_WritePin((GPIO_TypeDef *)self->port, self->pin, state ? GPIO_PIN_SET : GPIO_PIN_RESET);
 }
 
 static uint8_t _gpio_read(drv_gpio_t *self)
@@ -30,7 +28,7 @@ void drv_gpio_create(drv_gpio_t *self, void *port, uint16_t pin)
     /* 初始化数据*/
     self->port = port;
     self->pin  = pin;
-    
+
     /* 绑定方法 */
     self->init   = _gpio_init;
     self->write  = _gpio_write;
