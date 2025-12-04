@@ -387,6 +387,11 @@
               <FileType>1</FileType>
               <FilePath>..\Application\Src\app_task.c</FilePath>
             </File>
+            <File>
+              <FileName>app_board_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Application\Src\app_board_init.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
