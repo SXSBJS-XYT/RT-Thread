@@ -387,6 +387,11 @@
               <FileType>1</FileType>
               <FilePath>..\Application\Src\app_task.c</FilePath>
             </File>
+            <File>
+              <FileName>app_board_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Application\Src\app_board_init.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -691,6 +696,9 @@
               <FilePath>../Core/Src/system_stm32f4xx.c</FilePath>
             </File>
           </Files>
+        </Group>
+        <Group>
+          <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>
           <GroupName>Middlewares/RT-Thread/RTOS/libcpu</GroupName>
@@ -1890,9 +1898,6 @@
               </FileOption>
             </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
     </Target>
