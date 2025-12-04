@@ -3,6 +3,7 @@
 
 ## 现有工程
 - CreateThread
+- UartPrintf
 
 ## 工程目录结构
 ```
@@ -15,8 +16,10 @@ RT-Thread/
 ├── LICENSE                   # 许可证
 ├── README.md                 # 工程说明文档
 └── Kernel/                   # 内核工程
-    └── 1.CreateThread/       # 线程创建示例
-        └── CreateThread/
+    ├── 1.CreateThread/       # 线程创建示例
+    └── 2.UartPrintf/         # 串口打印示例
+
+
 ```
 ## 子工程目录结构
 
@@ -82,7 +85,7 @@ git clone https://github.com/SXSBJS-XYT/RT-Thread.git
 | -------------------- | ----- | -------------- |
 | charset              | utf-8 | 文件编码       |
 | indent_style         | space | 用空格缩进     |
-| indent_size          | 4     | 缩进4个空格    |
+| indent_size          | 2     | 缩进2个空格    |
 | end_of_line          | crlf  | Windows换行符  |
 | insert_final_newline | true  | 文件末尾加换行 |
 
@@ -95,7 +98,7 @@ git clone https://github.com/SXSBJS-XYT/RT-Thread.git
 | 规则       | 说明                  |
 | ---------- | --------------------- |
 | 大括号风格 | Allman（独占一行）    |
-| 缩进       | 4空格                 |
+| 缩进       | 2空格                 |
 | 行宽       | 100字符               |
 | 指针对齐   | 靠近变量名 `int *ptr` |
 
@@ -116,10 +119,10 @@ b=2;
 // 格式化后
 void func(void)
 {
-    if (a == 1)
-    {
-        b = 2;
-    }
+  if (a == 1)
+  {
+    b = 2;
+  }
 }
 ```
 
