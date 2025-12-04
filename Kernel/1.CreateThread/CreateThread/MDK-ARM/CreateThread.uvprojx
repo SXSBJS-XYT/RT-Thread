@@ -693,9 +693,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>::CMSIS</GroupName>
-        </Group>
-        <Group>
           <GroupName>Middlewares/RT-Thread/RTOS/libcpu</GroupName>
           <GroupOption>
             <CommonProperty>
@@ -1893,6 +1890,9 @@
               </FileOption>
             </File>
           </Files>
+        </Group>
+        <Group>
+          <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
     </Target>
