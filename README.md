@@ -5,6 +5,7 @@
 - CreateThread
 - UartPrintf
 - ThreadManagement
+- Semaphore
 
 ## 工程目录结构
 ```
@@ -19,7 +20,8 @@ RT-Thread/
 └── Kernel/                   # 内核工程
     ├── 1.CreateThread/       # 线程创建示例
     ├── 2.UartPrintf/         # 串口打印示例
-    └── 3.ThreadManagement/   # 线程管理示例
+    ├── 3.ThreadManagement/   # 线程管理示例
+    └── 4.Semaphore/          # 信号量示例
 
 
 
