@@ -4,6 +4,7 @@
 ## 现有工程
 - CreateThread
 - UartPrintf
+- ThreadManagement
 
 ## 工程目录结构
 ```
@@ -17,7 +18,9 @@ RT-Thread/
 ├── README.md                 # 工程说明文档
 └── Kernel/                   # 内核工程
     ├── 1.CreateThread/       # 线程创建示例
-    └── 2.UartPrintf/         # 串口打印示例
+    ├── 2.UartPrintf/         # 串口打印示例
+    └── 3.ThreadManagement/   # 线程管理示例
+
 
 
 ```
