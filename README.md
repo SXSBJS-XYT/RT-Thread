@@ -6,6 +6,7 @@
 - UartPrintf
 - ThreadManagement
 - Semaphore
+- PriorityInversion
 
 ## 工程目录结构
 ```
@@ -21,7 +22,8 @@ RT-Thread/
     ├── 1.CreateThread/       # 线程创建示例
     ├── 2.UartPrintf/         # 串口打印示例
     ├── 3.ThreadManagement/   # 线程管理示例
-    └── 4.Semaphore/          # 信号量示例
+    ├── 4.Semaphore/          # 信号量示例
+    └── 5.PriorityInversion/  # 优先级翻转示例
 
 
 
