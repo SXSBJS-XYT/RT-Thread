@@ -9,6 +9,7 @@
 - PriorityInversion
 - Mutex
 - Event
+- Mailbox
 
 ## 工程目录结构
 ```
@@ -27,7 +28,8 @@ RT-Thread/
     ├── 4.Semaphore/          # 信号量示例
     ├── 5.PriorityInversion/  # 优先级翻转示例
     ├── 6.Mutex/              # 互斥量示例
-    └── 7.Event/              # 事件示例
+    ├── 7.Event/              # 事件示例
+    └── 8.Mailbox/            # 邮箱示例
 
 
 
