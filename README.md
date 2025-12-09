@@ -1,5 +1,5 @@
 # RT-Thread
-基于STM32F429 + RT-Thread的工程模板。
+基于STM32F429 + RT-Thread的工程模板
 
 ## 现有工程
 - CreateThread
@@ -7,6 +7,11 @@
 - ThreadManagement
 - Semaphore
 - PriorityInversion
+- Mutex
+- Event
+- Mailbox
+- MessageQueue
+- Signal
 
 ## 工程目录结构
 ```
@@ -23,10 +28,12 @@ RT-Thread/
     ├── 2.UartPrintf/         # 串口打印示例
     ├── 3.ThreadManagement/   # 线程管理示例
     ├── 4.Semaphore/          # 信号量示例
-    └── 5.PriorityInversion/  # 优先级翻转示例
-
-
-
+    ├── 5.PriorityInversion/  # 优先级翻转示例
+    ├── 6.Mutex/              # 互斥量示例
+    ├── 7.Event/              # 事件示例
+    ├── 8.Mailbox/            # 邮箱示例
+    ├── 9.MessageQueue/       # 消息队列示例
+    └── 10.Signal/            # 信号示例
 ```
 ## 子工程目录结构
 
