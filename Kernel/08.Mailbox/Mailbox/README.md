@@ -66,12 +66,12 @@ Mailbox/
 
 ```bash
 git clone https://github.com/SXSBJS-XYT/RT-Thread.git
-cd .\Kernel\8.Mailbox\Mailbox\
+cd .\Kernel\08.Mailbox\Mailbox\
 ```
 
 ### 2. 打开工程
 kprintf
-- **Keil：** 打开 `Kernel/8.Mailbox/Mailbox/MDK-ARM/Mailbox.uvprojx`
+- **Keil：** 打开 `Kernel/08.Mailbox/Mailbox/MDK-ARM/Mailbox.uvprojx`
 - **VSCode：** 打开 `RT-Thread` 文件夹
 
 ### 3. 编译烧录

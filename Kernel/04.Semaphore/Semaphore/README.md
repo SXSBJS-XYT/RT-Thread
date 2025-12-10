@@ -66,12 +66,12 @@ Semaphore/
 
 ```bash
 git clone https://github.com/SXSBJS-XYT/RT-Thread.git
-cd .\Kernel\4.Semaphore\Semaphore\
+cd .\Kernel\04.Semaphore\Semaphore\
 ```
 
 ### 2. 打开工程
 kprintf
-- **Keil：** 打开 `Kernel/4.Semaphore/Semaphore/MDK-ARM/Semaphore.uvprojx`
+- **Keil：** 打开 `Kernel/04.Semaphore/Semaphore/MDK-ARM/Semaphore.uvprojx`
 - **VSCode：** 打开 `RT-Thread` 文件夹
 
 ### 3. 编译烧录

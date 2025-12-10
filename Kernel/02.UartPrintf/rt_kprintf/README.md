@@ -66,12 +66,12 @@ rt_kprintf/
 
 ```bash
 git clone https://github.com/SXSBJS-XYT/RT-Thread.git
-cd .\Kernel\2.UartPrintf\rt_kprintf\
+cd .\Kernel\02.UartPrintf\rt_kprintf\
 ```
 
 ### 2. 打开工程
 kprintf
-- **Keil：** 打开 `Kernel/2.UartPrintf/rt_kprintf/MDK-ARM/rt_kprintf.uvprojx`
+- **Keil：** 打开 `Kernel/02.UartPrintf/rt_kprintf/MDK-ARM/rt_kprintf.uvprojx`
 - **VSCode：** 打开 `RT-Thread` 文件夹
 
 ### 3. 编译烧录

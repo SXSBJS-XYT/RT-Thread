@@ -66,12 +66,12 @@ ThreadManagement/
 
 ```bash
 git clone https://github.com/SXSBJS-XYT/RT-Thread.git
-cd .\Kernel\3.ThreadManagement\ThreadManagement\
+cd .\Kernel\03.ThreadManagement\ThreadManagement\
 ```
 
 ### 2. 打开工程
 kprintf
-- **Keil：** 打开 `Kernel/3.ThreadManagement/ThreadManagement/MDK-ARM/ThreadManagement.uvprojx`
+- **Keil：** 打开 `Kernel/03.ThreadManagement/ThreadManagement/MDK-ARM/ThreadManagement.uvprojx`
 - **VSCode：** 打开 `RT-Thread` 文件夹
 
 ### 3. 编译烧录

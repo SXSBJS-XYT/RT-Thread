@@ -66,12 +66,12 @@ Mutex/
 
 ```bash
 git clone https://github.com/SXSBJS-XYT/RT-Thread.git
-cd .\Kernel\6.Mutex\Mutex\
+cd .\Kernel\06.Mutex\Mutex\
 ```
 
 ### 2. 打开工程
 kprintf
-- **Keil：** 打开 `Kernel/6.Mutex/Mutex/MDK-ARM/Mutex.uvprojx`
+- **Keil：** 打开 `Kernel/06.Mutex/Mutex/MDK-ARM/Mutex.uvprojx`
 - **VSCode：** 打开 `RT-Thread` 文件夹
 
 ### 3. 编译烧录

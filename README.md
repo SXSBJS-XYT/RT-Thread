@@ -12,6 +12,8 @@
 - Mailbox
 - MessageQueue
 - Signal
+- SmallmemTutorial
+- MempoolTutorial
 
 ## 工程目录结构
 ```
@@ -33,7 +35,9 @@ RT-Thread/
     ├── 7.Event/              # 事件示例
     ├── 8.Mailbox/            # 邮箱示例
     ├── 9.MessageQueue/       # 消息队列示例
-    └── 10.Signal/            # 信号示例
+    ├── 10.Signal/            # 信号示例
+    ├── 11.SmallmemTutorial   # 小内存算法示例
+    └── 12.MempoolTutorial    # 内存池算法示例
 ```
 ## 子工程目录结构
 

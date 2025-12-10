@@ -66,12 +66,12 @@ MessageQueue/
 
 ```bash
 git clone https://github.com/SXSBJS-XYT/RT-Thread.git
-cd .\Kernel\9.MessageQueue\MessageQueue\
+cd .\Kernel\09.MessageQueue\MessageQueue\
 ```
 
 ### 2. 打开工程
 kprintf
-- **Keil：** 打开 `Kernel/9.MessageQueue/MessageQueue/MDK-ARM/MessageQueue.uvprojx`
+- **Keil：** 打开 `Kernel/09.MessageQueue/MessageQueue/MDK-ARM/MessageQueue.uvprojx`
 - **VSCode：** 打开 `RT-Thread` 文件夹
 
 ### 3. 编译烧录
