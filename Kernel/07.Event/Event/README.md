@@ -66,12 +66,12 @@ Event/
 
 ```bash
 git clone https://github.com/SXSBJS-XYT/RT-Thread.git
-cd .\Kernel\7.Event\Event\
+cd .\Kernel\07.Event\Event\
 ```
 
 ### 2. 打开工程
 kprintf
-- **Keil：** 打开 `Kernel/7.Event/Event/MDK-ARM/Event.uvprojx`
+- **Keil：** 打开 `Kernel/07.Event/Event/MDK-ARM/Event.uvprojx`
 - **VSCode：** 打开 `RT-Thread` 文件夹
 
 ### 3. 编译烧录

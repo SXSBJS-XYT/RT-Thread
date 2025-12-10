@@ -67,12 +67,12 @@ PriorityInversion/
 
 ```bash
 git clone https://github.com/SXSBJS-XYT/RT-Thread.git
-cd .\Kernel\5.PriorityInversion\PriorityInversion\
+cd .\Kernel\05.PriorityInversion\PriorityInversion\
 ```
 
 ### 2. 打开工程
 kprintf
-- **Keil：** 打开 `Kernel/5.PriorityInversion/PriorityInversion/MDK-ARM/PriorityInversion.uvprojx`
+- **Keil：** 打开 `Kernel/05.PriorityInversion/PriorityInversion/MDK-ARM/PriorityInversion.uvprojx`
 - **VSCode：** 打开 `RT-Thread` 文件夹
 
 ### 3. 编译烧录

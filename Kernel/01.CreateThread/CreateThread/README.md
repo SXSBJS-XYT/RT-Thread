@@ -66,12 +66,12 @@ CreateThread/
 
 ```bash
 git clone https://github.com/SXSBJS-XYT/RT-Thread.git
-cd .\Kernel\1.CreateThread\CreateThread\
+cd .\Kernel\01.CreateThread\CreateThread\
 ```
 
 ### 2. 打开工程
 
-- **Keil：** 打开 `Kernel/1.CreateThread/CreateThread/MDK-ARM/CreateThread.uvprojx`
+- **Keil：** 打开 `Kernel/01.CreateThread/CreateThread/MDK-ARM/CreateThread.uvprojx`
 - **VSCode：** 打开 `RT-Thread` 文件夹
 
 ### 3. 编译烧录
