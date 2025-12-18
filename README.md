@@ -1,7 +1,14 @@
 # RT-Thread
-基于STM32F429 + RT-Thread的工程模板
+> 本仓库是作者在RT-Thread学习与实践过程中诞生的产物，Kernel文件夹下项目基于STM32F429搭载RT-Thread的Nano版本进行的Demo工程开发，Device文件夹下的项目计划在RT-ThreadStudio进行开发。
 
-## 现有工程
+- RT-Thread的内核原理、设备与驱动理论详情见：[RT-Thread官方文档](https://www.rt-thread.org/document/site/)
+
+- RT-Thread API参考手册：[RT-Thread API参考手册](https://www.rt-thread.org/document/api/)
+
+- 在此也特别推荐野火的[《RT-Thread内核实现与应用开发实战》](/RT-Thread/[野火®]《RT-Thread%20内核实现与应用开发实战—基于STM32》.pdf)教程
+
+## Demo工程
+**Kernel/**
 - CreateThread
 - UartPrintf
 - ThreadManagement
@@ -15,6 +22,9 @@
 - SmallmemTutorial
 - MempoolTutorial
 
+**Device/**
+- 待更新...
+
 ## 工程目录结构
 ```
 RT-Thread/
@@ -24,20 +34,22 @@ RT-Thread/
 ├── .gitignore                # Git忽略规则
 ├── .vscode/                  # VSCode配置
 ├── LICENSE                   # 许可证
-├── README.md                 # 工程说明文档
-└── Kernel/                   # 内核工程
-    ├── 1.CreateThread/       # 线程创建示例
-    ├── 2.UartPrintf/         # 串口打印示例
-    ├── 3.ThreadManagement/   # 线程管理示例
-    ├── 4.Semaphore/          # 信号量示例
-    ├── 5.PriorityInversion/  # 优先级翻转示例
-    ├── 6.Mutex/              # 互斥量示例
-    ├── 7.Event/              # 事件示例
-    ├── 8.Mailbox/            # 邮箱示例
-    ├── 9.MessageQueue/       # 消息队列示例
-    ├── 10.Signal/            # 信号示例
-    ├── 11.SmallmemTutorial   # 小内存算法示例
-    └── 12.MempoolTutorial    # 内存池算法示例
+├── Kernel/                   # 内核工程
+│    ├── 1.CreateThread/       # 线程创建示例
+│    ├── 2.UartPrintf/         # 串口打印示例
+│    ├── 3.ThreadManagement/   # 线程管理示例
+│    ├── 4.Semaphore/          # 信号量示例
+│    ├── 5.PriorityInversion/  # 优先级翻转示例
+│    ├── 6.Mutex/              # 互斥量示例
+│    ├── 7.Event/              # 事件示例
+│    ├── 8.Mailbox/            # 邮箱示例
+│    ├── 9.MessageQueue/       # 消息队列示例
+│    ├── 10.Signal/            # 信号示例
+│    ├── 11.SmallmemTutorial   # 小内存算法示例
+│    └── 12.MempoolTutorial    # 内存池算法示例
+├── Device/                   # 设备驱动工程
+│    └── 1.待更新/
+└── README.md                 # 工程说明文档
 ```
 ## 子工程目录结构
 
