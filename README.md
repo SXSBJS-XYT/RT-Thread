@@ -1,5 +1,5 @@
 # RT-Thread
-> 本仓库是作者在RT-Thread学习与实践过程中诞生的产物，Kernel文件夹下项目基于STM32F429搭载RT-Thread的Nano版本进行的Demo工程开发，Device文件夹下的项目计划在RT-ThreadStudio进行开发。
+> 本仓库是作者在RT-Thread学习与实践过程中诞生的产物，Kernel文件夹下项目基于STM32F429搭载RT-Thread的Nano版本进行的Demo工程开发，Device文件夹下的项目在RT-Thread Studio进行开发。
 
 - RT-Thread的内核原理、设备与驱动理论详情见：[RT-Thread官方文档](https://www.rt-thread.org/document/site/)
 
@@ -23,7 +23,8 @@
 - MempoolTutorial
 
 **Device/**
-- 待更新...
+- Dev_Pin
+- Dev_Uart
 
 ## 工程目录结构
 ```
@@ -48,46 +49,10 @@ RT-Thread/
 │    ├── 11.SmallmemTutorial   # 小内存算法示例
 │    └── 12.MempoolTutorial    # 内存池算法示例
 ├── Device/                   # 设备驱动工程
-│    └── 1.待更新/
+│    ├── 1.Dev_Pin/            # PIN设备示例
+│    └── 2.Dev_Uart/           # UART设备示例
 └── README.md                 # 工程说明文档
 ```
-## 子工程目录结构
-
-```
-├── Application/          # 应用层 - 业务逻辑、任务
-│   ├── Inc/
-│   └── Src/
-├── Service/              # 服务层 - 功能模块封装
-│   ├── Inc/
-│   └── Src/
-├── Driver/               # 驱动层 - 硬件抽象
-│   ├── Inc/
-│   └── Src/
-├── Core/                 # CubeMX生成 - HAL配置
-├── Drivers/              # CubeMX生成 - HAL库
-├── Middlewares/          # 中间件 - RT-Thread
-├── MDK-ARM/              # Keil工程文件
-├── RT-Thread/            # RT-Thread配置
-└── README.md             # 子工程说明文档
-```
-
-## 代码分层说明
-
-```
-┌─────────────────────────────────────────┐
-│            Application                  │  业务逻辑、线程任务
-├─────────────────────────────────────────┤
-│              Service                    │  LED、按键等功能模块
-├─────────────────────────────────────────┤
-│              Driver                     │  GPIO、UART等驱动封装
-├─────────────────────────────────────────┤
-│            Core / Drivers               │  CubeMX生成的HAL库
-└─────────────────────────────────────────┘
-```
-
-**调用规则：上层调用下层，禁止跨层调用。**
-
----
 
 ## 快速开始
 
@@ -209,6 +174,7 @@ void func(void)
 | Keil MDK     | 5.26 | 编译、调试、烧录 |
 | VSCode       | 最新 | 代码编辑、格式化 |
 | STM32CubeMX  | 6.15 | 初始化代码生成   |
+| RT-Thread Studio  | 2.2.9 | 编译、调试、烧录   |
 | clang-format | 最新 | 代码格式化       |
 
 ### VSCode扩展
@@ -218,25 +184,6 @@ void func(void)
 | C/C++        | Microsoft    | C语言支持         |
 | EditorConfig | EditorConfig | 读取.editorconfig |
 | Clang-Format | xaver        | 代码格式化        |
-
-## 代码规范
-
-### 命名规范
-
-| 类型       | 规范        | 示例             |
-| ---------- | ----------- | ---------------- |
-| 文件名     | 小写+下划线 | `app_task.c`     |
-| 函数名     | 小写+下划线 | `srv_led_on()`   |
-| 宏定义     | 大写+下划线 | `LED_ACTIVE_LOW` |
-| 结构体类型 | 小写+_t后缀 | `srv_led_t`      |
-
-### 文件前缀
-
-| 层级        | 前缀 | 示例         |
-| ----------- | ---- | ------------ |
-| Application | app_ | `app_task.c` |
-| Service     | srv_ | `srv_led.c`  |
-| Driver      | drv_ | `drv_gpio.c` |
 
 ---
 
